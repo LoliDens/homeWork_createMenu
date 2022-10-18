@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace homeWork_createMenu
 {
@@ -31,8 +26,6 @@ namespace homeWork_createMenu
             const string CommandSetCollorBeckgroudBlou = "2";
             const string CommandSetCollorBeckgroudWhite = "3";
             const string CommandSetCollorBeckgroudBlack = "4";
-
-            const string CommandGoToMainMenu = "<";
 
             string userInput;
             bool isExit = false;
@@ -94,7 +87,7 @@ namespace homeWork_createMenu
                             Console.WriteLine("Вы можите изменить данные аккаунта для этого нажмите :");
                             Console.WriteLine($"{CommandChangeName} - чтобы изменить имя аккаунта");
                             Console.WriteLine($"{CommandChangePassword} - чтобы изменить пароль");
-                            Console.WriteLine($"{CommandGoToMainMenu} - чтобы выйти в главное меню");
+                            Console.WriteLine("Или введите любой другой символ, чтобы выйти в главное меню");
                             userInput = Console.ReadLine();
                             Console.Clear();
 
@@ -116,8 +109,6 @@ namespace homeWork_createMenu
                                     Console.Clear();
                                     break;
 
-                                case CommandGoToMainMenu:
-                                    break;
                                 default:
                                     Console.WriteLine("Команда введина неверно. Нажмите entet, чтобы выйти в главное мнею");
                                     Console.ReadKey();
